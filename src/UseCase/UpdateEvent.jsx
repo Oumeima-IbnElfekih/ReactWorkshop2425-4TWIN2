@@ -59,16 +59,7 @@ function UpdateEvent() {
           like: eventItem.like,
         })
     
-        updateEventObject({
-          id:id,
-          name:name,
-          description:description,
-          price:price,
-          img: img[0].name,
-          nbTickets:nbTickets,
-          nbParticipants: eventItem.nbParticipants,
-          like: eventItem.like,
-        })
+        updateEventObject(result.data)
         if (result.status == 200){
     
             navigate('/events')

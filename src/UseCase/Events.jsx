@@ -55,7 +55,7 @@ setTimeout(()=>{
      
            await deleteEvent(id)
            deleteEventObject(id)
-           setEvents(()=>events.filter((event)=>event.id !== id))
+         //  setEvents(()=>events.filter((event)=>event.id !== id))
      
            
          }   

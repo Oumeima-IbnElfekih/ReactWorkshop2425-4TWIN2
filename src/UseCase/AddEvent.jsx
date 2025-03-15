@@ -35,7 +35,8 @@ function AddEvent() {
         like: false
       }
     const result  = await addEvent(object)
-    addEventObject(object)
+
+    addEventObject(result.data)
     if (result.status == 201){
 
         navigate('/events')
